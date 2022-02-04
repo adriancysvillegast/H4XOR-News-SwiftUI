@@ -11,14 +11,24 @@
 		09FBDBED277E1CFF00927F49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FBDBEC277E1CFF00927F49 /* ContentView.swift */; };
 		09FBDBEF277E1D0400927F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09FBDBEE277E1D0400927F49 /* Assets.xcassets */; };
 		09FBDBF2277E1D0400927F49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09FBDBF1277E1D0400927F49 /* Preview Assets.xcassets */; };
+		09FBDBFB277E2F3C00927F49 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FBDBFA277E2F3C00927F49 /* NetworkManager.swift */; };
+		09FBDBFD277E363D00927F49 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FBDBFC277E363D00927F49 /* PostData.swift */; };
+		09FBDC00277E43B500927F49 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FBDBFF277E43B500927F49 /* DetailView.swift */; };
+		09FBDC02277E4EF400927F49 /* webView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FBDC01277E4EF400927F49 /* webView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09058E832780B141000695E8 /* H4XOR News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "H4XOR News.entitlements"; sourceTree = "<group>"; };
 		09FBDBE7277E1CFF00927F49 /* H4XOR News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "H4XOR News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09FBDBEA277E1CFF00927F49 /* H4XOR_NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H4XOR_NewsApp.swift; sourceTree = "<group>"; };
 		09FBDBEC277E1CFF00927F49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09FBDBEE277E1D0400927F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09FBDBF1277E1D0400927F49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09FBDBF8277E1D2900927F49 /* H4XOR-News-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "H4XOR-News-Info.plist"; sourceTree = SOURCE_ROOT; };
+		09FBDBFA277E2F3C00927F49 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		09FBDBFC277E363D00927F49 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		09FBDBFF277E43B500927F49 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		09FBDC01277E4EF400927F49 /* webView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,11 @@
 		09FBDBE9277E1CFF00927F49 /* H4XOR News */ = {
 			isa = PBXGroup;
 			children = (
+				09058E832780B141000695E8 /* H4XOR News.entitlements */,
+				09FBDBF9277E2E0100927F49 /* Models */,
+				09FBDBF8277E1D2900927F49 /* H4XOR-News-Info.plist */,
 				09FBDBEA277E1CFF00927F49 /* H4XOR_NewsApp.swift */,
-				09FBDBEC277E1CFF00927F49 /* ContentView.swift */,
+				09FBDBFE277E438400927F49 /* Views */,
 				09FBDBEE277E1D0400927F49 /* Assets.xcassets */,
 				09FBDBF0277E1D0400927F49 /* Preview Content */,
 			);
@@ -65,6 +78,25 @@
 				09FBDBF1277E1D0400927F49 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09FBDBF9277E2E0100927F49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09FBDBFA277E2F3C00927F49 /* NetworkManager.swift */,
+				09FBDBFC277E363D00927F49 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09FBDBFE277E438400927F49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09FBDBEC277E1CFF00927F49 /* ContentView.swift */,
+				09FBDBFF277E43B500927F49 /* DetailView.swift */,
+				09FBDC01277E4EF400927F49 /* webView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09FBDBFB277E2F3C00927F49 /* NetworkManager.swift in Sources */,
+				09FBDC02277E4EF400927F49 /* webView.swift in Sources */,
+				09FBDBFD277E363D00927F49 /* PostData.swift in Sources */,
 				09FBDBED277E1CFF00927F49 /* ContentView.swift in Sources */,
+				09FBDC00277E43B500927F49 /* DetailView.swift in Sources */,
 				09FBDBEB277E1CFF00927F49 /* H4XOR_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,12 +302,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "H4XOR News/H4XOR News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"H4XOR News/Preview Content\"";
 				DEVELOPMENT_TEAM = 5WR73Q6863;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "H4XOR-News-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +322,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adriancysvillegas.H4XOR-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,12 +334,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "H4XOR News/H4XOR News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"H4XOR News/Preview Content\"";
 				DEVELOPMENT_TEAM = 5WR73Q6863;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "H4XOR-News-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,6 +354,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adriancysvillegas.H4XOR-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
